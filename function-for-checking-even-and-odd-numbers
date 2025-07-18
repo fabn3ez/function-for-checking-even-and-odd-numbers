@@ -1,0 +1,23 @@
+include <iostream>
+using namespace std;
+ int even(int num){
+ return( num%2==0) ?1 : 0;
+ }
+int main(){
+int n;
+cout<<"How many numbers do you want to enter: ";
+cin>>n;
+int arr[n];
+cout<<"Enter "<<n<<" numbers;\n";
+for(int i=0;i<n;i++){
+cin>>arr[i];
+}
+for(int i=0;i<n){
+ if(even(arr[i])){
+cout<<arr[i]<<"is a even number";
+ }else{
+cout<<arr[i]<<"is an odd number";
+ }
+}
+return 0;
+}
